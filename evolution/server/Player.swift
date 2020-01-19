@@ -16,7 +16,7 @@ struct Player: Equatable {
     var id: String
     var name: String
     
-    var gameStatus: GameStatus = GameStatus()
+    var status: PlayerStatus = PlayerStatus()
     var connection: Connection
     
 }

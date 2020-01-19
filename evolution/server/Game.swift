@@ -30,14 +30,14 @@ struct Game {
     }
     
     mutating func gameStateChange() {
-        // change player's gamestatus
+        // change player's status
         var players = playerList
         switch state {
         case .card:
             players = playerList.map { player -> Player in
                 var _player = player
-                let count = _player.gameStatus.cards.count + _player.gameStatus.creatures.count
-                _player.gameStatus.cards.append(contentsOf: Card.gen(count: count == 0 ? 6 : UInt(count + 2)))
+                let count = _player.status.cards.count + _player.status.creatures.count
+                _player.status.cards.append(contentsOf: Card.gen(count: count == 0 ? 6 : UInt(count + 2)))
                 return _player
             }
         default:

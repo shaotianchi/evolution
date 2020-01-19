@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct GameStatus {
+struct PlayerStatus {
     var canAttack = false
     var foodCount = 0
     var cards: [Card] = []

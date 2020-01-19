@@ -17,7 +17,7 @@
 		7E867D5E23D0304400428D9E /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D5D23D0304400428D9E /* Skill.swift */; };
 		7E867D6023D0308200428D9E /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D5F23D0308200428D9E /* Creature.swift */; };
 		7E867D6223D030D600428D9E /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6123D030D600428D9E /* Types.swift */; };
-		7E867D6423D0319B00428D9E /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6323D0319B00428D9E /* GameStatus.swift */; };
+		7E867D6423D0319B00428D9E /* PlayerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6323D0319B00428D9E /* PlayerStatus.swift */; };
 		7E867D6623D031F900428D9E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6523D031F900428D9E /* Player.swift */; };
 		7E867D6823D0321200428D9E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6723D0321200428D9E /* Game.swift */; };
 		7E867D6A23D034F200428D9E /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6923D034F200428D9E /* GameController.swift */; };
@@ -37,7 +37,7 @@
 		7E867D5D23D0304400428D9E /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		7E867D5F23D0308200428D9E /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		7E867D6123D030D600428D9E /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
-		7E867D6323D0319B00428D9E /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
+		7E867D6323D0319B00428D9E /* PlayerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatus.swift; sourceTree = "<group>"; };
 		7E867D6523D031F900428D9E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7E867D6723D0321200428D9E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7E867D6923D034F200428D9E /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		7E867D5A23D0300600428D9E /* core */ = {
 			isa = PBXGroup;
 			children = (
-				7E867D6323D0319B00428D9E /* GameStatus.swift */,
+				7E867D6323D0319B00428D9E /* PlayerStatus.swift */,
 				7E867D5B23D0302E00428D9E /* Card.swift */,
 				7E867D5D23D0304400428D9E /* Skill.swift */,
 				7E867D5F23D0308200428D9E /* Creature.swift */,
@@ -192,7 +192,7 @@
 				7E867D4B23D02FD800428D9E /* ViewController.swift in Sources */,
 				7E867D6823D0321200428D9E /* Game.swift in Sources */,
 				7E867D6A23D034F200428D9E /* GameController.swift in Sources */,
-				7E867D6423D0319B00428D9E /* GameStatus.swift in Sources */,
+				7E867D6423D0319B00428D9E /* PlayerStatus.swift in Sources */,
 				7E867D4723D02FD800428D9E /* AppDelegate.swift in Sources */,
 				7E867D6023D0308200428D9E /* Creature.swift in Sources */,
 				7E867D6223D030D600428D9E /* Types.swift in Sources */,
