@@ -10,7 +10,6 @@ import Foundation
 
 struct PlayerStatus {
     var canAttack = false
-    var foodCount = 0
     var cards: [Card] = []
     var creatures: [Creature] = []
 }

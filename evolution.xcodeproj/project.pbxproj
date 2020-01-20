@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E61232123D58136009F3247 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E61232023D58136009F3247 /* GameStatus.swift */; };
 		7E867D4723D02FD800428D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D4623D02FD800428D9E /* AppDelegate.swift */; };
 		7E867D4923D02FD800428D9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D4823D02FD800428D9E /* SceneDelegate.swift */; };
 		7E867D4B23D02FD800428D9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D4A23D02FD800428D9E /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E61232023D58136009F3247 /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 		7E867D4323D02FD800428D9E /* evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E867D4623D02FD800428D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E867D4823D02FD800428D9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,11 +93,13 @@
 		7E867D5A23D0300600428D9E /* core */ = {
 			isa = PBXGroup;
 			children = (
+				7E867D6523D031F900428D9E /* Player.swift */,
 				7E867D6323D0319B00428D9E /* PlayerStatus.swift */,
 				7E867D5B23D0302E00428D9E /* Card.swift */,
 				7E867D5D23D0304400428D9E /* Skill.swift */,
 				7E867D5F23D0308200428D9E /* Creature.swift */,
 				7E867D6123D030D600428D9E /* Types.swift */,
+				7E61232023D58136009F3247 /* GameStatus.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -112,7 +116,6 @@
 		7E867D6E23D04E5F00428D9E /* server */ = {
 			isa = PBXGroup;
 			children = (
-				7E867D6523D031F900428D9E /* Player.swift */,
 				7E867D6723D0321200428D9E /* Game.swift */,
 			);
 			path = server;
@@ -199,6 +202,7 @@
 				7E867D6C23D0495300428D9E /* Connection.swift in Sources */,
 				7E867D5E23D0304400428D9E /* Skill.swift in Sources */,
 				7E867D4923D02FD800428D9E /* SceneDelegate.swift in Sources */,
+				7E61232123D58136009F3247 /* GameStatus.swift in Sources */,
 				7E867D6623D031F900428D9E /* Player.swift in Sources */,
 				7E867D5C23D0302E00428D9E /* Card.swift in Sources */,
 			);

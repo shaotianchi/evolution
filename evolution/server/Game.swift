@@ -35,21 +35,30 @@ struct Game {
         switch state {
         case .card:
             players = playerList.map { player -> Player in
-                var _player = player
-                let count = _player.status.cards.count + _player.status.creatures.count
-                _player.status.cards.append(contentsOf: Card.gen(count: count == 0 ? 6 : UInt(count + 2)))
-                return _player
+                var player = player
+                let count = player.status.cards.count + player.status.creatures.count
+                player.status.cards.append(contentsOf: Card.gen(count: count == 0 ? 6 : UInt(count + 2)))
+                return player
             }
         default:
-            print("123")
+            playerList = players
         }
         
-        guard let firstPlayer = playerList.first else { return }
+        guard let firstPlayer = players.first else { return }
         
-        firstPlayer.connection.status(.acting(gs: state), status: players)
+        firstPlayer.connection.status(.acting(gs: state), status: GameStatus(currentPlayer: firstPlayer, otherCreatures: players[1...].reduce([:], { result, player in
+            var result = result
+            result[player.id] = player.status.creatures
+            return result
+        }), foods: 0, state: state))
         
-        playerList[1...].forEach({ player in
-            player.connection.status(.idle(gs: state), status: players)
+        players[1...].forEach({ player in
+            let otherCreatures = players.filter { $0.id != player.id }.reduce([:], { result, player -> [String : [Creature]] in
+                var result = result
+                result[player.id] = player.status.creatures
+                return result
+            })
+            player.connection.status(.idle(gs: state), status: GameStatus(currentPlayer: player, otherCreatures: otherCreatures, foods: 0, state: state))
         })
     }
     

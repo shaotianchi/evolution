@@ -9,12 +9,18 @@
 import Foundation
 
 
-struct Card {
+struct Card: Equatable {
     var skill1: Skill
     var skill2: Skill?
     
     static func gen(count: UInt) -> [Card] {
-        return []
+        return (1...count).compactMap { i -> Card? in
+            guard let card = cards.randomElement() else {
+                return nil
+            }
+            cards.remove(at: cards.firstIndex(of: card)!)
+            return card
+        }
     }
 }
 
@@ -94,7 +100,7 @@ private var cards = [
     Card(skill1: .fluke, skill2: .infomation),
     Card(skill1: .carrion),
     Card(skill1: .infomation, skill2: .carnivorous),
-    Card(skill1: .cave, skill2: .fat),
+    Card(skill1: .caveman, skill2: .fat),
     Card(skill1: .poisonous, skill2: .carnivorous),
     Card(skill1: .cooperation, skill2: .fat),
     Card(skill1: .ambush, skill2: .specialB),
@@ -144,4 +150,4 @@ private var cards = [
     Card(skill1: .tailoff),
     Card(skill1: .cooperation, skill2: .fat),
     Card(skill1: .insight, skill2: .fat)
-]
+].shuffled()

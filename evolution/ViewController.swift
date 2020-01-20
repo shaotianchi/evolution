@@ -9,12 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var cardsView: UIView!
+    
     var gameController = GameController()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gameController.createLocalGame(nickname: "rainbow")
         
+        gameController.localConnection.subscribeStatus { (status) in
+            print(status.currentPlayer.status.cards.count)
+//            status.currentPlayer.status.creatures.map { (creature) in
+//
+//            }
+        }
+        
+        gameController.createLocalGame(nickname: "rainbow")
     }
 
 

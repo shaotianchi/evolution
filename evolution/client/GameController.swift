@@ -9,9 +9,9 @@
 import Foundation
 
 struct GameController {
-    lazy var localConnection = LocalConnection()
+    private(set) lazy var localConnection = LocalConnection()
     
-    lazy var btConnection = BTConnection()
+    private(set) lazy var btConnection = BTConnection()
     
     mutating func createLocalGame(nickname: String) {
         localConnection.join(nickname: nickname)

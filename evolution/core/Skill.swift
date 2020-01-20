@@ -9,7 +9,11 @@
 import Foundation
 
 
-struct Skill {
+struct Skill: Equatable {
+    static func == (lhs: Skill, rhs: Skill) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
     var name: String
     var action: Any?
     
