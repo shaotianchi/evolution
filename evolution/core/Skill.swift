@@ -8,6 +8,14 @@
 
 import Foundation
 
+extension String {
+    var localizedSkillName: String {
+        get {
+            return NSLocalizedString(self, comment: "")
+        }
+    }
+}
+
 
 struct Skill: Equatable {
     static func == (lhs: Skill, rhs: Skill) -> Bool {

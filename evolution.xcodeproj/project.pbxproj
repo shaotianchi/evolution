@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,9 +23,13 @@
 		7E867D6823D0321200428D9E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6723D0321200428D9E /* Game.swift */; };
 		7E867D6A23D034F200428D9E /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6923D034F200428D9E /* GameController.swift */; };
 		7E867D6C23D0495300428D9E /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E867D6B23D0495300428D9E /* Connection.swift */; };
+		7ECFF10C23D58C3B00FAE1E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ECFF10E23D58C3B00FAE1E0 /* Localizable.strings */; };
+		7ECFF11423D5960100FAE1E0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECFF11323D5960100FAE1E0 /* CardView.swift */; };
+		8147EA7C22FEF07085B67A91 /* Pods_evolution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48671AC6D6EE9371C45D42A /* Pods_evolution.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2439FA49C70F972D51D586 /* Pods-evolution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evolution.debug.xcconfig"; path = "Target Support Files/Pods-evolution/Pods-evolution.debug.xcconfig"; sourceTree = "<group>"; };
 		7E61232023D58136009F3247 /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 		7E867D4323D02FD800428D9E /* evolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E867D4623D02FD800428D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,12 @@
 		7E867D6723D0321200428D9E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7E867D6923D034F200428D9E /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		7E867D6B23D0495300428D9E /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		7ECFF10F23D58D0C00FAE1E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		7ECFF11023D58D0C00FAE1E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7ECFF11123D58D0C00FAE1E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7ECFF11323D5960100FAE1E0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C48671AC6D6EE9371C45D42A /* Pods_evolution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_evolution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDE57E4DD4B350A448632EF /* Pods-evolution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-evolution.release.xcconfig"; path = "Target Support Files/Pods-evolution/Pods-evolution.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8147EA7C22FEF07085B67A91 /* Pods_evolution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E85EC02B63E5B162A66B457 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C48671AC6D6EE9371C45D42A /* Pods_evolution.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D0FA90352E11C9AA6F9AAB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E2439FA49C70F972D51D586 /* Pods-evolution.debug.xcconfig */,
+				EDDE57E4DD4B350A448632EF /* Pods-evolution.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7E867D3A23D02FD800428D9E = {
 			isa = PBXGroup;
 			children = (
 				7E867D4523D02FD800428D9E /* evolution */,
 				7E867D4423D02FD800428D9E /* Products */,
+				2D0FA90352E11C9AA6F9AAB9 /* Pods */,
+				1E85EC02B63E5B162A66B457 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +106,7 @@
 		7E867D4523D02FD800428D9E /* evolution */ = {
 			isa = PBXGroup;
 			children = (
+				7ECFF11223D595C400FAE1E0 /* layout */,
 				7E867D6E23D04E5F00428D9E /* server */,
 				7E867D6D23D04E4800428D9E /* client */,
 				7E867D5A23D0300600428D9E /* core */,
@@ -86,6 +117,7 @@
 				7E867D4F23D02FDA00428D9E /* Assets.xcassets */,
 				7E867D5123D02FDA00428D9E /* LaunchScreen.storyboard */,
 				7E867D5423D02FDA00428D9E /* Info.plist */,
+				7ECFF10E23D58C3B00FAE1E0 /* Localizable.strings */,
 			);
 			path = evolution;
 			sourceTree = "<group>";
@@ -121,6 +153,14 @@
 			path = server;
 			sourceTree = "<group>";
 		};
+		7ECFF11223D595C400FAE1E0 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				7ECFF11323D5960100FAE1E0 /* CardView.swift */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E867D5723D02FDB00428D9E /* Build configuration list for PBXNativeTarget "evolution" */;
 			buildPhases = (
+				481FDB736E9F53308C136B17 /* [CP] Check Pods Manifest.lock */,
 				7E867D3F23D02FD800428D9E /* Sources */,
 				7E867D4023D02FD800428D9E /* Frameworks */,
 				7E867D4123D02FD800428D9E /* Resources */,
+				49DA50B1DC83318B4DD07F70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +205,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7E867D3A23D02FD800428D9E;
 			productRefGroup = 7E867D4423D02FD800428D9E /* Products */;
@@ -179,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECFF10C23D58C3B00FAE1E0 /* Localizable.strings in Resources */,
 				7E867D5323D02FDA00428D9E /* LaunchScreen.storyboard in Resources */,
 				7E867D5023D02FDA00428D9E /* Assets.xcassets in Resources */,
 				7E867D4E23D02FD800428D9E /* Main.storyboard in Resources */,
@@ -187,11 +231,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		481FDB736E9F53308C136B17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-evolution-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49DA50B1DC83318B4DD07F70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evolution/Pods-evolution-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-evolution/Pods-evolution-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-evolution/Pods-evolution-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E867D3F23D02FD800428D9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECFF11423D5960100FAE1E0 /* CardView.swift in Sources */,
 				7E867D4B23D02FD800428D9E /* ViewController.swift in Sources */,
 				7E867D6823D0321200428D9E /* Game.swift in Sources */,
 				7E867D6A23D034F200428D9E /* GameController.swift in Sources */,
@@ -215,6 +302,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7E867D4D23D02FD800428D9E /* Base */,
+				7ECFF10F23D58D0C00FAE1E0 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -223,8 +311,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				7E867D5223D02FDA00428D9E /* Base */,
+				7ECFF11023D58D0C00FAE1E0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7ECFF10E23D58C3B00FAE1E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ECFF11123D58D0C00FAE1E0 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -234,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -294,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -346,6 +445,7 @@
 		};
 		7E867D5823D02FDB00428D9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2439FA49C70F972D51D586 /* Pods-evolution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -364,6 +464,7 @@
 		};
 		7E867D5923D02FDB00428D9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDE57E4DD4B350A448632EF /* Pods-evolution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

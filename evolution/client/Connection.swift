@@ -10,14 +10,14 @@ import Foundation
 
 protocol Connection {
     var statusHandler: ((GameStatus) -> ())? { get set }
-    mutating func join(_ id: String, nickname: String)
+    func join(_ id: String, nickname: String)
     func status(_ state: PlayerState, status: GameStatus)
-    mutating func subscribeStatus(handler: @escaping (GameStatus) -> ())
+    func subscribeStatus(handler: @escaping (GameStatus) -> ()) -> Connection
 }
 
-private struct RoboConnection: Connection {
-    func subscribeStatus(handler: @escaping (GameStatus) -> ()) {
-        
+private class RoboConnection: Connection {
+    func subscribeStatus(handler: @escaping (GameStatus) -> ()) -> Connection {
+        return self
     }
     
     var statusHandler: ((GameStatus) -> ())?
@@ -41,17 +41,17 @@ class LocalConnection: Connection {
         _ = localGame.join(id: "com.rainbow.robo", nickname: "机器人", connection: roboConnection)
     }
     
-    
     func status(_ state: PlayerState, status: GameStatus) {
         statusHandler?(status)
     }
     
-    func subscribeStatus(handler: @escaping (GameStatus) -> ()) {
+    func subscribeStatus(handler: @escaping (GameStatus) -> ()) -> Connection {
         statusHandler = handler
+        return self
     }
 }
 
-struct BTConnection {
+class BTConnection {
     func status(_ state: PlayerState, status: [Player]) {
         
     }
